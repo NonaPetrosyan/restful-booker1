@@ -48,7 +48,7 @@ jobs:
            distribution: 'microsoft'
            java-version: '17'
       - name: Install Allure
-        run: sudo wget https://github.com/allure-framework/allure2/releases/download/2.30.0/allure-2.30.0.tgz && sudo tar -zxvf allure-2.30.0.tgz -C /opt/ && sudo ln -s /opt/allure-2.30.0/bin/allure /usr/bin/allure
+        run: sudo wget https://github.com/allure-framework/allure2/releases/download/2.13.5/allure-2.13.5.tgz && sudo tar -zxvf allure-2.13.5.tgz -C /opt/ && sudo ln -s /opt/allure-2.13.5./bin/allure /usr/bin/allure
       - name: Add Executor And Categories in Allure Results
         run: cp -r categories.json executor.json allure-results/  
       - name: Generate report  
